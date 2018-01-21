@@ -17,7 +17,6 @@ function dive(currentKey, into, target) {
             }
 1
             if (typeof newVal === "object" && Object.prototype.toString.call(newVal) != '[object Date]') {
-                console.log("newVal",newVal,"es object");
                 dive(newKey, newVal, target);
             } else {
                 target[newKey] = newVal;

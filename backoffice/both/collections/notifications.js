@@ -18,8 +18,6 @@ Notifications.allow({
         return userId && Roles.userIsInRole(userId, "admin");
     },
     remove: function (userId, doc) {
-        console.log("userId")
-        console.log("remove", Roles.userIsInRole(userId, "admin"))
         return userId && Roles.userIsInRole(userId, "admin");
     }
 });

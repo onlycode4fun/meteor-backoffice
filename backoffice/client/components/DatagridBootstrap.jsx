@@ -14,14 +14,10 @@ export default class DatagridBootstrap extends React.Component {
 
     beforeSaveCell(row, cellName, cellValue) {
         // do your stuff...
-        console.log("before")
     }
 
 
     handleRowSelect(row, isSelected, e) {
-        console.log("this.props.collection,",this.props.collection)
-        console.log("this.props.subscription,",this.props.subscription)
-       console.log(row, isSelected, e);
        if(isSelected){
            FlowRouter.go("/view/"+this.props.collection+"/"+this.props.subscription+"/"+row._id);
        }

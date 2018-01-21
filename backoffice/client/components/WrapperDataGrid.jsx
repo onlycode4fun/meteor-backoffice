@@ -36,7 +36,6 @@ export default class WrapperDataGrid extends React.Component {
 
     subscribe(collection, subscription){
         Meteor.subscribe(subscription, ()=>{
-            console.log("readu");
             let data = (collection == "users") ? Meteor.users.find().fetch() : window[collection] ? window[collection].find().fetch() : null;
             if(data){
                 for(let i = 0; i < data.length; i ++){

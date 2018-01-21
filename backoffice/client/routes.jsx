@@ -10,10 +10,8 @@ FlowRouter.triggers.enter([function(context, redirect){
     if(Meteor.userId() && context.path === '/login'){
         redirect('/');
     }else if(!Meteor.userId() && context.path !== '/login' ){
-        console.log("loginn");
         redirect('/login');
     }else{
-        console.log("nothing");
     }
 }]);
 
