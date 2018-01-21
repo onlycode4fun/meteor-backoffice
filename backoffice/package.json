@@ -1,0 +1,24 @@
+{
+  "name": "backoffice",
+  "private": true,
+  "scripts": {
+    "start": "npm install; meteor;"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "bootstrap": "^3.3.7",
+    "material-ui": "^0.18.5",
+    "meteor-node-stubs": "~0.2.4",
+    "react": "^15.5.4",
+    "react-addons-update": "^15.6.0",
+    "react-bootstrap": "^0.31.0",
+    "react-bootstrap-table": "^3.4.1",
+    "react-dom": "^15.5.4",
+    "react-mounter": "^1.2.0",
+    "react-router-dom": "^4.1.2",
+    "react-table": "^6.3.0",
+    "react-tap-event-plugin": "^2.0.1",
+    "simple-react-form": "^1.9.4",
+    "simple-react-form-material-ui": "^1.7.13"
+  }
+}
